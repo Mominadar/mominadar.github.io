@@ -37,7 +37,7 @@
 				</a>
 			{/each}
 			<a
-				href={`/Momina Babar - SE - Resume.pdf`}
+				href={`${base}/Momina Babar - SE - Resume.pdf`}
 				target="_blank"
 				class="nav-menu-item !text-[var(--secondary-text)]"
 			>

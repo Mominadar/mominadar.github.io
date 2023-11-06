@@ -4,13 +4,13 @@
 	import Icon from './Icon/Icon.svelte';
 	import CommonPage from './CommonPage.svelte';
 	const { title, links } = CONTACTME ;
-
+	const id = "contact-me";
 </script>
 
-<CommonPage {title}>
+<CommonPage {title} {id}>
 
 <div class="carrousel flex-[0.5] row-center">
-		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
+		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-20">
 			{#each links as link}
 				<a
 					class="decoration-none"
@@ -18,7 +18,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'20px'} />
+					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'35px'} />
 				</a>
 			{/each}
 		</div>

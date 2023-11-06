@@ -4,63 +4,73 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'slick-portfolio-angular',
+		slug: 'slick-npm-package',
 		color: '#5e95e3',
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
+			'A type-safe package allows users to mock progress on the front-end. The package exposes a hook that allow users to mock progress on client side with multiple configuration options',
 		shortDescription:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Unknown,
-		name: 'Slick Portfolio',
+			'Mock progress in React using typescript hook.',
+		links: [{ to: 'https://www.npmjs.com/package/mock-progress-react', label: 'npm' }],
+		logo: Assets.Npm,
+		name: 'Mock Progress',
 		period: {
-			from: new Date()
+			from: new Date('2022-06-30'),
+			to: new Date('2022-08-30')
 		},
-		skills: getSkills('angular', 'ts', 'tailwind'),
-		type: 'Website Template'
+		skills: getSkills('ts','reactjs'),
+		type: 'NPM Package'
 	},
 	{
-		slug: 'slick-portfolio-svelte',
-		color: '#ff3e00',
+		slug: 'slick-illnessrx',
+		color: '#5e95e3',
 		description:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
+			'A type-safe package allows users to mock progress on the front-end. The package exposes a hook that allow users to mock progress on client side with multiple configuration options',
 		shortDescription:
-			'A Vercel-like developer portfolio website template made with Typescript and SvelteKit.',
-		links: [{ to: 'https://github.com/RiadhAdrani/slick-portfolio-svelte', label: 'GitHub' }],
-		logo: Assets.Svelte,
-		name: 'Slick Portfolio',
+			'Web application for medical students to group study and collaborate on papers, presentations etc.',
+		links: [{ to: 'https://www.npmjs.com/package/mock-progress-react', label: 'npm' }],
+		logo: Assets.TypeScript,
+		name: 'IllnessRx',
 		period: {
-			from: new Date()
+			from: new Date('2022-12-01'),
+			to: new Date('2023-10-01')
 		},
-		skills: getSkills('svelte', 'ts', 'tailwind', 'sass'),
-		type: 'Website Template',
-		screenshots: [
-			{
-				label: 'screen 1',
-				src: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '2',
-				src: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '3',
-				src: 'https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '4',
-				src: 'https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '5',
-				src: 'https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			},
-			{
-				label: '6',
-				src: 'https://images.unsplash.com/photo-1585079542156-2755d9c8a094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2dyYW1taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60'
-			}
-		]
-	}
+		skills: getSkills('js','reactjs','sass','node'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'slick-class-diagram',
+		color: '#5e95e3',
+		description:
+			'A type-safe package allows users to mock progress on the front-end. The package exposes a hook that allow users to mock progress on client side with multiple configuration options',
+		shortDescription:
+			'Create Class diagrams using an intuitive interface built using reactflow.',
+		links: [{ to: 'https://github.com/Mominadar/class-diagram-generator', label: 'npm' }],
+		logo: Assets.TypeScript,
+		name: 'Class Diagram Generator',
+		period: {
+			from: new Date('2022-07-01'),
+			to: new Date('2022-10-02')
+		},
+		skills: getSkills('ts','reactjs','tailwind','next'),
+		type: 'Web Application'
+	},
+	{
+		slug: 'slick-class-diagram',
+		color: '#5e95e3',
+		description:
+			'A type-safe package allows users to mock progress on the front-end. The package exposes a hook that allow users to mock progress on client side with multiple configuration options',
+		shortDescription:
+			'Create Class diagrams using an intuitive interface built using reactflow.',
+		links: [{ to: 'https://github.com/Mominadar/class-diagram-generator', label: 'npm' }],
+		logo: Assets.TypeScript,
+		name: 'Class Diagram Generator',
+		period: {
+			from: new Date('2022-07-01'),
+			to: new Date('2022-10-02')
+		},
+		skills: getSkills('ts','reactjs','tailwind','next'),
+		type: 'Web Application'
+	},
 ];
 
 export default MY_PROJECTS;

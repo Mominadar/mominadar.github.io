@@ -44,31 +44,20 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 };
 
 const links = [
-	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{
+		platform: Platform.Email,
+		link: 'mominababar97@gmail.com'
+	},
+	{ platform: Platform.GitHub, link: 'https://github.com/Mominadar' },
 	{
 		platform: Platform.Linkedin,
-		link: 'https://www.linkedin.com/'
-	},
-	{
-		platform: Platform.Twitter,
-		link: 'https://twitter.com/'
+		link: 'https://www.linkedin.com/in/mominababardar/'
 	},
 	{
 		platform: Platform.StackOverflow,
-		link: 'https://stackoverflow.com/'
+		link: 'https://stackoverflow.com/users/14307094/mbd'
 	},
-	{
-		platform: Platform.Email,
-		link: 'riadh-adrani@hotmail.fr'
-	},
-	{
-		platform: Platform.Youtube,
-		link: 'https://www.youtube.com'
-	},
-	{
-		platform: Platform.Facebook,
-		link: 'https://www.facebook.com'
-	}
+
 ]
 
 export const HOME: HomePageParams = {
@@ -91,12 +80,12 @@ export const BLOGS: ProjectPageParams = {
 };
 
 export const CONTACTME: ContactPageParams = {
-	title: 'Reach out to me at',
+	title: 'Reach out to me at:',
 	links: links
 };
 
 export const EXPERIENCES: ExperiencePageParams = {
-	title: 'Experiences',
+	title: 'Experience',
 	items: MY_EXPERIENCES
 };
 

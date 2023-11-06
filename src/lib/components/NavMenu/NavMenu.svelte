@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { HOME, NavBar } from '$lib/params';
+	import { NavBar } from '$lib/params';
 	import { theme, toggleTheme } from '$lib/stores/theme';
 
 	import { base } from '$app/paths';
@@ -11,16 +11,13 @@
 	$: {
 		if ($page) {
 			currentRoute = $page.url.pathname;
-
-			// console.log(currentRoute);
 		}
 	}
 
 	const items = [
 		{ title: NavBar.skills, to: '/#skills', icon: 'i-carbon-software-resource-cluster' },
 		{ title: NavBar.personal, to: '/#projects', icon: 'i-carbon-cube' },
-		{ title: NavBar.career, to: '/#experience', icon: 'i-carbon-development' },
-		{ title: NavBar.resume, to: '/resume', icon: 'i-carbon-result' }
+		{ title: NavBar.career, to: '/#experience', icon: 'i-carbon-development' }
 	];
 </script>
 
@@ -39,6 +36,14 @@
 					<span class="nav-menu-item-label">{item.title}</span>
 				</a>
 			{/each}
+			<a
+				href={`/Momina Babar - SE - Resume.pdf`}
+				target="_blank"
+				class="nav-menu-item !text-[var(--secondary-text)]"
+			>
+				<UIcon icon="i-carbon-result" classes="text-1.3em" />
+				<span class="nav-menu-item-label">{NavBar.resume}</span>
+			</a>
 		</div>
 		<div class="flex flex-row self-stretch items-stretch gap-1 text-1.15em">
 			<button

@@ -52,10 +52,6 @@
 		});
 	}
 
-	const onSearch = (e: CustomEvent<{ search: string }>) => {
-		search = e.detail.search;
-	};
-
 	onMount(() => {
 		const query = location.search;
 
@@ -71,7 +67,7 @@
 	});
 </script>
 
-<CommonPage {title} on:search={onSearch}>
+<CommonPage {title}>
 	<div class="projects-filters">
 		{#each filters as tech}
 			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}

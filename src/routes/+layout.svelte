@@ -14,7 +14,7 @@
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
 	<div class="content container"><slot /></div>
-	<Footer/>
+	<!-- <Footer/> -->
 </div>
 
 <style lang="scss">

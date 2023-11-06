@@ -13,6 +13,7 @@
 	}
 
 	const { items, title } = PROJECTS;
+	const id = "projects";
 
 	let filters: Array<SkillFilter> = MY_SKILLS.filter((it) => {
 		return items.some((project) => project.skills.some((skill) => skill.slug === it.slug));
@@ -51,10 +52,6 @@
 		});
 	}
 
-	const onSearch = (e: CustomEvent<{ search: string }>) => {
-		search = e.detail.search;
-	};
-
 	onMount(() => {
 		const query = location.search;
 
@@ -70,7 +67,7 @@
 	});
 </script>
 
-<CommonPage {title} on:search={onSearch}>
+<CommonPage {title} {id} >
 	<div class="projects-filters">
 		{#each filters as tech}
 			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}

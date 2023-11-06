@@ -6,11 +6,11 @@ import ExperienceCard from '$lib/components/ExperienceCard/ExperienceCard.svelte
 	import type { Experience } from '$lib/types';
 
 	const { items, title } = EXPERIENCES;
-
+	const id = "experience";
 	let result: Array<Experience> = [...items];
 </script>
 
-<CommonPage {title}>
+<CommonPage {title} {id}>
 	<div class="col items-center relative mt-10 flex-1">
 		{#if result.length === 0}
 			<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">

@@ -34,6 +34,7 @@ const Assets = {
 	VueJs: a('vue.png'),
 	ReactJs: a('react.svg'),
 	Dart: a('dart.png'),
+	Npm: a('npm.svg'),
 	Kotlin: a('kotlin.png'),
 	Python: a('python.png'),
 	NodeJs: a('node.png'),

@@ -38,29 +38,5 @@
 		padding: 0px 20px;
 		border-top: 1px solid var(--secondary);
 		background-color: var(--main);
-
-		&-item {
-			text-decoration: none;
-			font-weight: 400;
-			padding: 10px 20px;
-			color: inherit;
-			display: flex;
-			align-items: center;
-			border-bottom: 3px solid transparent;
-
-			&-label {
-				margin-left: 10px;
-
-				@media (max-width: 950px) {
-					& {
-						display: none;
-					}
-				}
-			}
-
-			&:hover {
-				background-color: var(--main-hover);
-			}
-		}
 	}
 </style>

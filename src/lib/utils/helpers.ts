@@ -1,3 +1,4 @@
+import { isBlank } from '@riadh-adrani/utils';
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 
@@ -69,3 +70,10 @@ export function getTimeDiff(date1: Date, date2 = new Date(Date.now() + 1000 * 60
 
 	return `${Math.trunc(n)} ${u}${n > 1 ? 's' : ''}`;
 }
+
+export const isEmail = (email: string): boolean => {
+	const reg =
+		/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+	return !isBlank(email) && reg.test(email);
+};

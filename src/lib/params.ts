@@ -1,3 +1,4 @@
+import MY_BLOGS from './blogs.params';
 import MY_EXPERIENCES from './experiences.params';
 import MY_PROJECTS from './projects.params';
 import MY_SKILLS from './skills.params';
@@ -8,7 +9,8 @@ import {
 	type ExperiencePageParams,
 	type SkillsPageParams,
 	type ResumePageParams,
-	type SearchPageParams
+	type SearchPageParams,
+	type ContactPageParams
 } from './types';
 import { Icons } from './utils';
 
@@ -41,44 +43,56 @@ export const getPlatfromIcon = (platform: Platform): Icons => {
 	}
 };
 
+const links = [
+	{ platform: Platform.GitHub, link: 'https://github.com/' },
+	{
+		platform: Platform.Linkedin,
+		link: 'https://www.linkedin.com/'
+	},
+	{
+		platform: Platform.Twitter,
+		link: 'https://twitter.com/'
+	},
+	{
+		platform: Platform.StackOverflow,
+		link: 'https://stackoverflow.com/'
+	},
+	{
+		platform: Platform.Email,
+		link: 'riadh-adrani@hotmail.fr'
+	},
+	{
+		platform: Platform.Youtube,
+		link: 'https://www.youtube.com'
+	},
+	{
+		platform: Platform.Facebook,
+		link: 'https://www.facebook.com'
+	}
+]
+
 export const HOME: HomePageParams = {
 	title: 'Momina Babar',
 	name: 'Hi, I\'m Momina',
 	lastName: 'Babar',
 	description:
 		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
-	links: [
-		{ platform: Platform.GitHub, link: 'https://github.com/' },
-		{
-			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/'
-		},
-		{
-			platform: Platform.Twitter,
-			link: 'https://twitter.com/'
-		},
-		{
-			platform: Platform.StackOverflow,
-			link: 'https://stackoverflow.com/'
-		},
-		{
-			platform: Platform.Email,
-			link: 'riadh-adrani@hotmail.fr'
-		},
-		{
-			platform: Platform.Youtube,
-			link: 'https://www.youtube.com'
-		},
-		{
-			platform: Platform.Facebook,
-			link: 'https://www.facebook.com'
-		}
-	]
+	links: links
 };
 
 export const PROJECTS: ProjectPageParams = {
 	title: 'Projects',
 	items: MY_PROJECTS
+};
+
+export const BLOGS: ProjectPageParams = {
+	title: 'Blogs',
+	items: MY_BLOGS
+};
+
+export const CONTACTME: ContactPageParams = {
+	title: 'Reach out to me at',
+	links: links
 };
 
 export const EXPERIENCES: ExperiencePageParams = {

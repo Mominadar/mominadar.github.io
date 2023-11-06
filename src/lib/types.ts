@@ -80,6 +80,10 @@ export interface HomePageParams extends PageParams {
 	skills?: Array<Skill>;
 }
 
+export interface ContactPageParams extends PageParams {
+	links: Array<HomeLink>;
+}
+
 export type SearchPageParams = PageParams;
 
 export type ProjectPageParams = PageWithSearchParams<Project>;

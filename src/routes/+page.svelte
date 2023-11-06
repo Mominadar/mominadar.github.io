@@ -5,18 +5,12 @@
 	import { TITLE_SUFFIX } from '$lib/params';
 	import { HOME, getPlatfromIcon } from '$lib/params';
 	import MY_SKILLS from '$lib/skills.params';
-	import { useTitle } from '$lib/utils/helpers';
-	import { isBlank } from '@riadh-adrani/utils';
+	import { isEmail, useTitle } from '$lib/utils/helpers';
 	import SkillList from '$lib/components/SkillList.svelte';
 	import ExperienceList from '$lib/components/ExperienceList.svelte';
+	import BlogList from '$lib/components/BlogList.svelte';
+	import ContactMe from '$lib/components/ContactMe.svelte';
 	const { description, lastName, links, name, title, skills } = HOME;
-
-	const isEmail = (email: string): boolean => {
-		const reg =
-			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-		return !isBlank(email) && reg.test(email);
-	};
 </script>
 
 <svelte:head>
@@ -45,5 +39,7 @@
 	</div>
 	<SkillList items={skills ?? MY_SKILLS} />
 	<ProjectList/>
+	<BlogList/>
 	<ExperienceList/>
+	<ContactMe />
 </div>

@@ -71,7 +71,10 @@ const Assets = {
 	Jest: a('jest.png'),
 	Unocss: a('unocss.svg'),
 	Ruvy: a('ruvy.svg'),
-	Postcss: a('postcss.svg')
+	Postcss: a('postcss.svg'),
+	Auxcube: a('auxcube_logo.jpeg'),
+	Afiniti: a('afiniti_logo.png'),
+	Freelance: a('freelancing.jpeg')
 };
 
 export default Assets;

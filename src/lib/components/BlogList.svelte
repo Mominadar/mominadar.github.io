@@ -68,13 +68,6 @@
 </script>
 
 <CommonPage {title}>
-	<div class="projects-filters">
-		{#each filters as tech}
-			<Chip active={tech.isSelected} classes={'text-0.8em'} on:click={() => onSelected(tech.slug)}
-				>{tech.name}</Chip
-			>
-		{/each}
-	</div>
 	{#if displayed.length === 0}
 		<div class="p-5 col-center gap-3 m-y-auto text-[var(--accent-text)] flex-1">
 			<UIcon icon="i-carbon-cube" classes="text-3.5em" />

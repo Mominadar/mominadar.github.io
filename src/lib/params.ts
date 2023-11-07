@@ -18,10 +18,12 @@ export const TITLE_SUFFIX = 'Slick template with Svelte';
 
 export const NavBar = {
 	home: 'Home',
-	personal: 'Projects',
+	projects: 'Projects',
 	career: 'Experience',
 	resume: 'Resume',
-	skills: 'Skills'
+	skills: 'Skills',
+	about:'About'
+
 };
 
 export const getPlatfromIcon = (platform: Platform): Icons => {
@@ -64,8 +66,7 @@ export const HOME: HomePageParams = {
 	title: 'Momina Babar',
 	name: 'Hi, I\'m Momina',
 	lastName: 'Babar',
-	description:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, rerum. Debitis accusantium deleniti enim iste dignissimos? Similique, exercitationem! Odit vero, numquam quae ratione maxime sunt reiciendis laudantium quaerat iure ipsum!',
+	description: 'I\'m a seasoned Full Stack Developer with three years of experience, navigating the dynamic landscapes of both greenfield and legacy systems. My technical arsenal includes Python, React, TypeScript, SQL, and Java, empowering me to drive projects from inception to deployment, complete with meticulous testing and ongoing product support. I\'m fueled by a relentless passion for innovative problem-solving and the thrill of constructing cutting-edge solutions. I\'m on a constant quest for new challenges and am excited to be a part of pioneering projects that redefine the boundaries of technology.',
 	links: links
 };
 

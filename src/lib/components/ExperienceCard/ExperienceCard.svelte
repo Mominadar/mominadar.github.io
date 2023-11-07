@@ -6,7 +6,6 @@
 	import CardTitle from '../Card/CardTitle.svelte';
 	import ChipIcon from '../Chip/ChipIcon.svelte';
 	import { getAssetURL } from '$lib/data/assets';
-	import { base } from '$app/paths';
 	import UIcon from '../Icon/UIcon.svelte';
 
 	export let experience: Experience;
@@ -23,7 +22,7 @@
 	const period = `${from} - ${to} · ${months}`;
 </script>
 
-<Card margin="0px 0px 20px 0px" tiltDegree={2} href={`${base}/experience/${experience.slug}`}>
+<Card margin="0px 0px 20px 0px" tiltDegree={2}>
 	<div class="col md:flex-row items-start gap-5 md:gap-1">
 		<CardLogo src={getAssetURL(experience.logo)} alt={experience.company} size={75} />
 		<div class="col ml-0 md:ml-[20px] gap-3 w-full">
@@ -44,13 +43,19 @@
 				</ChipIcon>
 			</div>
 			<div class="text-[var(--accent-text)] text-[0.9em] font-200">{period}</div>
-			<div class="experience-description">{experience.description}</div>
+			{#if  typeof(experience.description) == 'string'}
+				<div class="experience-description">{experience.description}</div>
+			{:else}
+				<div>
+					{#each experience.description as exp}
+						<div class="experience-description">{exp}</div>
+					{/each}
+				</div>
+			{/if}
+
 			<div class="flex flex-row flex-wrap mt-5">
 				{#each experience.skills as skill}
-					<ChipIcon
-						logo={getAssetURL(skill.logo)}
-						name={skill.name}
-					/>
+					<ChipIcon logo={getAssetURL(skill.logo)} name={skill.name} />
 				{/each}
 			</div>
 		</div>

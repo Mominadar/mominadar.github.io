@@ -15,8 +15,8 @@
 	}
 
 	const items = [
-		{ title: NavBar.skills, to: '/#skills', icon: 'i-carbon-software-resource-cluster' },
-		{ title: NavBar.personal, to: '/#projects', icon: 'i-carbon-cube' },
+		{ title: NavBar.about, to: '/#about', icon: 'i-carbon-software-resource-cluster' },
+		{ title: NavBar.projects, to: '/#projects', icon: 'i-carbon-cube' },
 		{ title: NavBar.career, to: '/#experience', icon: 'i-carbon-development' }
 	];
 </script>
@@ -27,7 +27,7 @@
 			href={`${base}/`}
 			class="nav-menu-left decoration-none flex flex-row items-center cursor-pointer px-4 text-[var(--secondary-text)] self-stretch hover:bg-[color:var(--main-hover)]"
 		>
-			<span class="ml-2 text-md font-bold hidden md:inline">MB</span>
+			<span class="ml-2 text-md font-bold hidden md:inline">Home</span>
 		</a>
 		<div class="flex flex-row flex-1 self-center justify-center">
 			{#each items as item}

@@ -53,24 +53,7 @@ const MY_PROJECTS: Array<Project> = [
 		},
 		skills: getSkills('ts','reactjs','tailwind','next'),
 		type: 'Web Application'
-	},
-	{
-		slug: 'slick-class-diagram',
-		color: '#5e95e3',
-		description:
-			'A type-safe package allows users to mock progress on the front-end. The package exposes a hook that allow users to mock progress on client side with multiple configuration options',
-		shortDescription:
-			'Create Class diagrams using an intuitive interface built using reactflow.',
-		links: [{ to: 'https://github.com/Mominadar/class-diagram-generator', label: 'npm' }],
-		logo: Assets.TypeScript,
-		name: 'Class Diagram Generator',
-		period: {
-			from: new Date('2022-07-01'),
-			to: new Date('2022-10-02')
-		},
-		skills: getSkills('ts','reactjs','tailwind','next'),
-		type: 'Web Application'
-	},
+	}
 ];
 
 export default MY_PROJECTS;

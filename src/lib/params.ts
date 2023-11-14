@@ -66,7 +66,7 @@ export const HOME: HomePageParams = {
 	title: 'Momina Babar',
 	name: 'Hi, I\'m Momina',
 	lastName: 'Babar',
-	description: 'I\'m a seasoned Full Stack Developer with three years of experience, navigating the dynamic landscapes of both greenfield and legacy systems. My technical arsenal includes Python, React, TypeScript, SQL, and Java, empowering me to drive projects from inception to deployment, complete with meticulous testing and ongoing product support. I\'m fueled by a relentless passion for innovative problem-solving and the thrill of constructing cutting-edge solutions. I\'m on a constant quest for new challenges and am excited to be a part of pioneering projects that redefine the boundaries of technology.',
+	description: 'I\'m a seasoned Full Stack Developer with three years of experience, navigating the dynamic landscapes of both greenfield and legacy systems. My technical arsenal includes Python, React, TypeScript, SQL, and Java, empowering me to drive projects from inception to deployment, complete with meticulous testing and ongoing product support. I\'m fueled by a relentless passion for innovative problem-solving and the thrill of constructing cutting-edge solutions. I\'m on a constant quest for new challenges and am excited to be a part of pioneering projects.',
 	links: links
 };
 

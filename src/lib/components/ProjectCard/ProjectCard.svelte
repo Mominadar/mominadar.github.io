@@ -27,8 +27,11 @@
 </script>
 
 <Card color={project.color} href={isBlog ? `${base}/blogs/${project.slug}`: undefined}>
-	<CardLogo alt={project.name} src={getAssetURL(project.logo)} size={40} />
-	<div class="m-t-20px row justify-between items-center">
+	{#if isBlog == false}
+		<CardLogo alt={project.name} src={getAssetURL(project.logo)} size={40} />
+	{/if}
+	
+	<div class={`m-t-${isBlog ? '5':'20'}px row justify-between items-center`}>
 		<CardTitle title={project.name} />
 		<div class="row">
 			{#each project.links as link}

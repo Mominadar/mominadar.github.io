@@ -4,7 +4,7 @@
 	import '$lib/index.scss';
 	import { onHydrated, theme } from '$lib/stores/theme';
 	import { onMount } from 'svelte';
-	import Footer from '$lib/components/Footer/Footer.svelte';
+	import UIcon from '$lib/components/Icon/UIcon.svelte';
 
 	export const prerender = true;
 
@@ -14,7 +14,7 @@
 <div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
 	<div class="content container"><slot /></div>
-	<!-- <Footer/> -->
+	<!-- <UIcon icon="i-carbon-arrow-up" classes="text-1.3em p-[0.8rem] border-solid-red absolute m-auto bottom-0 right-0" /> -->
 </div>
 
 <style lang="scss">

@@ -21,7 +21,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 	{
 		slug: 'software-freelance',
 		company: 'Afiniti',
-		description: 'Creating awesome applications for customers.',
+		description: 'At Afiniti, primarily work on core monitroing service, doing both development and providing product support. Also, worked on a number of MVPs that could be potential game changers for the company. These projects were of varied domains from chatbots to discussion forums to snmp agents.',
 		contract: ContractType.Freelance,
 		type: 'Software Development',
 		location: 'Islamabad',
@@ -36,7 +36,7 @@ const MY_EXPERIENCES: Array<Experience> = [
 	{
 		slug: 'software-freelance-junior',
 		company: 'Self-employed',
-		description: 'Creating awesome applications for customers.',
+		description: 'Built and designed websites for clients of various domains. Implemented web scrapers and other automation tools.',
 		contract: ContractType.Freelance,
 		type: 'Software Development',
 		location: 'Home',

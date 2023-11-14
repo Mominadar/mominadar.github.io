@@ -17,8 +17,7 @@
 	<title>{useTitle(title, TITLE_SUFFIX)}</title>
 </svelte:head>
 <div
-    id="about"
-	class="col self-center flex-1 md:flex-col md:slef-stretch justify-center lg:justify-between items-center p-y-8rem p-x-5rem m-auto"
+    id="about" class="col self-center flex-1 md:flex-col md:slef-stretch justify-center lg:justify-between items-center p-y-8rem p-x-3rem lg:p-x-5rem m-auto"
 >
 	<div class="md:flex-1 gap-10px">
 		<MainTitle classes="md:text-left ">{name} {lastName}</MainTitle>
@@ -37,7 +36,7 @@
 				</a>
 			{/each}
 		</div>
-	</div>
+	</div> 
 	<SkillList items={skills ?? MY_SKILLS} />
 	<ProjectList/>
 	<BlogList/>

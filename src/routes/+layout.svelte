@@ -11,9 +11,9 @@
 	onMount(() => onHydrated());
 </script>
 
-<div class={`body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
+<div class={`w-[100%] body contents ${$theme ? 'theme-dark' : 'theme-light'}`}>
 	<NavMenu />
-	<div class="content container"><slot /></div>
+	<slot />
 	<!-- <UIcon icon="i-carbon-arrow-up" classes="text-1.3em p-[0.8rem] border-solid-red absolute m-auto bottom-0 right-0" /> -->
 </div>
 
@@ -30,8 +30,6 @@
 		background-color: var(--main);
 		color: var(--main-text);
 		font-family: var(--text-f);
-		display: flex;
-		flex-direction: column;
 		transition-duration: 200ms;
 
 		letter-spacing: 1px;

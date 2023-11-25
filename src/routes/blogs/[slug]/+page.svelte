@@ -22,7 +22,7 @@
 	$: computedTitle = data.project ? `${data.project.name} - ${title}` : title;
 </script>
 
-<TabTitle title={computedTitle} />
+<TabTitle />
 
 <div class="pb-10 overflow-x-hidden col flex-1">
 	{#if data.project === undefined}
@@ -60,7 +60,6 @@
 								<CardLogo
 									src={getAssetURL(item.logo)}
 									alt={item.name}
-									radius={'0px'}
 									size={15}
 									classes="mr-2"
 								/>

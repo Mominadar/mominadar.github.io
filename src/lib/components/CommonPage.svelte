@@ -7,7 +7,7 @@
 
 </script>
 
-<TabTitle bind:title />
+<TabTitle />
 <div id={id} class="flex-1 w-full col gap-5 px-2 sm:px-4 md:px-6 py-4 sm:py-8 md:py-12">
 	<MainTitle >{title}</MainTitle>
 	<div class="col gap-5 flex-1">
